@@ -42,7 +42,7 @@ April 2025.
 |---|---|
 | **Publisher** | U.S. Food and Drug Administration |
 | **Dataset** | FDA Adverse Event Reporting System (FAERS) |
-| **Access** | openFDA API — open.fda.gov/apis/drug/event |
+| **Access** | openFDA API (open.fda.gov/apis/drug/event) |
 | **Coverage** | January 2022 to April 2025 |
 | **Records** | 6,000 adverse event reports across five pharmaceutical products |
 | **Frequency** | Quarterly updates |
@@ -67,98 +67,132 @@ April 2025.
 
 ## Key Findings
 
-### Mortality — Ibuprofen
+### Mortality Finding — Ibuprofen
 Ibuprofen recorded the highest death rate at 20.50%, more than double the
-next highest drug Metformin at 13.10%. The disproportionately high death rate
-relative to its serious event rate of 79.60% may suggest that when ibuprofen
-adverse events are serious they could be more likely to be fatal than
-equivalent events for other drugs in the dataset.
+next highest drug Metformin at 13.10%. The proportion of ibuprofen adverse
+events resulting in death appeared disproportionately high relative to its
+overall serious event rate of 79.60%, which may suggest that ibuprofen
+adverse events could be more likely to result in fatal outcomes than
+equivalent events reported for other drugs in this dataset. This pattern
+may warrant further investigation with a larger and more representative
+dataset before firm conclusions can be drawn.
 
-### Serious Events
-81.15% of all 6,000 adverse event reports were classified as serious.
-Paracetamol recorded the highest serious event rate at 93.65% and Aspirin
-recorded the lowest at 72.80%. The serious event rate increased consistently
-from 80.42% in 2022 to 91.94% in 2025, an upward trend of 11.52 percentage
-points over 3 years and 4 months. This trend could reflect a shift in the
-reporting population towards higher acuity patients over the period.
+### Serious Adverse Events
+Out of 6,000 adverse event reports analysed, 81.15% were classified as
+serious by the reporting healthcare professional or patient. Paracetamol
+had the highest proportion of serious events at 93.65% and Aspirin had the
+lowest at 72.80%. The proportion of serious events across all five drugs
+appeared to increase steadily from 80.42% in 2022 to 91.94% in 2025, an
+upward trend of 11.52 percentage points over 3 years and 4 months. This
+pattern could reflect a gradual change in the types of patients or clinical
+situations being reported, though a larger dataset would be needed to
+confirm this observation.
 
-### Hospitalisation
-Atorvastatin recorded the highest hospitalisation rate at 40.80% and
-Paracetamol recorded the lowest at 25.60%. The relatively low hospitalisation
-rate for Paracetamol despite its high serious event rate may suggest that
-serious Paracetamol adverse events could predominantly result in outcomes
-other than hospitalisation such as disability or life threatening events.
+### Hospital Admissions
+Atorvastatin had the highest rate of reports leading to hospital admission
+at 40.80% and Paracetamol had the lowest at 25.60%. The relatively low
+hospital admission rate for Paracetamol despite having the highest serious
+event rate may indicate that serious Paracetamol adverse events could more
+commonly result in other outcomes such as disability or life threatening
+events rather than hospital admission. This interpretation should be treated
+with caution given that the Paracetamol data may have captured opioid
+combination products rather than plain paracetamol.
 
-### Disabling Events
-Paracetamol recorded the highest disabling event rate at 22.25%,
-significantly higher than Ibuprofen at 8.60% and Atorvastatin at 4.40%.
-Aspirin recorded the lowest disabling event rate at 1.30%. The high disabling
-rate for Paracetamol could be partially attributable to the opioid combination
-product population captured within the dataset.
+### Disabling Adverse Events
+Paracetamol had the highest rate of adverse events resulting in disability
+at 22.25%, substantially higher than Ibuprofen at 8.60% and Atorvastatin
+at 4.40%. Aspirin had the lowest disabling event rate at 1.30%. The
+elevated disabling rate for Paracetamol could be partially related to the
+opioid combination products that may have been captured within the
+Paracetamol search results.
 
-### Life Threatening Events
-Life threatening event rates were broadly consistent across all five drugs
-ranging from 3.70% for Aspirin to 5.60% for Paracetamol. This relatively
-narrow range may suggest that life threatening outcomes could be distributed
-relatively evenly across drug types regardless of their overall serious event
-profiles.
+### Life Threatening Adverse Events
+The proportion of adverse events classified as life threatening was broadly
+similar across all five drugs, ranging from 3.70% for Aspirin to 5.60% for
+Paracetamol. This narrow range across very different drug types may suggest
+that life threatening outcomes are distributed relatively evenly regardless
+of which drug is involved, though the sample size of this analysis limits
+the confidence with which this can be stated.
 
-### Death Rate Trend
-The death rate declined from 11.00% in 2022 to 8.40% in 2024 before
-increasing sharply to 12.90% in 2025. The 2025 increase of 4.50 percentage
-points represents the largest single year on year change in the dataset and
-could reflect emerging safety signals that may warrant further investigation
-once complete 2025 quarterly data becomes available.
+### Death Rate Over Time
+The proportion of adverse event reports resulting in death appeared to
+improve from 11.00% in 2022 to 8.40% in 2024 before rising sharply to
+12.90% in 2025. The 2025 increase of 4.50 percentage points is the largest
+single year on year change observed in the dataset. As the 2025 data
+available at the time of this analysis covered only January to April, this
+finding should be interpreted carefully until the full 2025 dataset becomes
+available.
 
-### Signal Detection — Reporting Odds Ratio
-The strongest signal identified was Paracetamol (Drug withdrawal syndrome)
-at ROR 777.39, supported by (Drug dependence) at ROR 176.88 and (Emotional
-distress) at ROR 149.22. These signals may be consistent with opioid
+### Pharmacovigilance Signal Detection
+A statistical method called the Reporting Odds Ratio (ROR) was used to
+identify drug reaction combinations reported more frequently than would be
+expected by chance. An ROR greater than 1 indicates a potential signal
+worthy of further investigation.
+
+The strongest signal identified was Paracetamol and Drug withdrawal syndrome
+at ROR 777.39, supported by Drug dependence at ROR 176.88 and Emotional
+distress at ROR 149.22. These signals may be consistent with opioid
 combination products containing acetaminophen rather than plain paracetamol.
-Metformin (Lactic acidosis) was identified at ROR 49.34, a signal consistent
-with established medical literature on lactic acidosis risk in patients with
-renal impairment. Ibuprofen signals included Joint swelling at ROR 8.25,
-Hypersensitivity at ROR 7.97 and Rash at ROR 7.05. Aspirin (Anaemia) was
-identified at ROR 3.80, which may be consistent with known gastrointestinal
-bleeding risk. Atorvastatin — Fall at ROR 2.27 could be consistent with
-statin associated muscle weakness in elderly patients.
+Metformin and Lactic acidosis was identified at ROR 49.34, a signal
+consistent with established medical literature on lactic acidosis risk in
+patients with renal impairment taking Metformin. Ibuprofen signals included
+Joint swelling at ROR 8.25, Hypersensitivity at ROR 7.97 and Rash at ROR
+7.05. Aspirin and Anaemia was identified at ROR 3.80, which may be
+consistent with known gastrointestinal bleeding risk associated with long
+term aspirin use. Atorvastatin and Fall was identified at ROR 2.27, which
+could be consistent with muscle weakness in elderly patients taking statins,
+though the relatively modest ROR value suggests this signal should be
+interpreted with appropriate caution.
 
-### Opioid Combination Products — Paracetamol
-The Paracetamol dataset may have captured opioid combination products
-containing acetaminophen in addition to plain paracetamol. This could be
-evidenced by the dominance of Drug dependence, Drug withdrawal syndrome and
-Overdose in the reaction profile and the ROR analysis. FDA drug name searches
-by active ingredient may capture the full range of combination products and
-not exclusively single ingredient formulations.
+### Paracetamol and Opioid Combination Products
+The Paracetamol data retrieved from the FDA database may have captured
+opioid combination products such as those containing both acetaminophen and
+codeine or oxycodone, in addition to plain paracetamol. This is suggested
+by the high frequency of Drug dependence, Drug withdrawal syndrome and
+Overdose in the reported reactions, which are not typical reactions
+associated with plain paracetamol. The ROR analysis confirmed Drug
+withdrawal syndrome as the strongest signal in the entire dataset at
+ROR 777.39. This is an important consideration when interpreting Paracetamol
+specific findings in this analysis, as the results may reflect the safety
+profile of combination opioid products rather than paracetamol alone.
 
-### Demographics — Age
-The 85 and over age group recorded the highest serious event rates across
-both sexes — Female 93.75% and Male 87.32%. The 65 to 84 age group was the
-largest known age group at 1,534 records, which could be consistent with
-the chronic disease profile of the drugs analysed. Serious event rates
-appeared to increase with age across both sexes, which may reflect the
-increased vulnerability of elderly patients to serious drug reactions.
+### Patient Age
+Patients aged 85 and over had the highest rates of serious adverse events
+across both male and female patients, at 93.75% and 87.32% respectively.
+Patients aged 65 to 84 made up the largest age group with known age
+information at 1,534 records, which could reflect the fact that all five
+drugs are commonly prescribed for conditions that affect older adults.
+Serious event rates appeared to increase with age in both male and female
+patients, which may reflect the greater vulnerability of older patients to
+serious adverse drug reactions. However 39.73% of records had no age
+recorded, which means age related findings should be interpreted with
+appropriate caution.
 
-### Demographics — Sex
+### Patient Sex
 Female patients accounted for 51.88% of reports and male patients 48.12%.
-Female patients dominated the 18 to 44 age group with 410 reports compared
-to 169 male reports, which could be consistent with known patterns of higher
-adverse event reporting among women of reproductive age. Male patients
-recorded higher serious event rates than females in the Under 18 and 45 to
-64 age groups, though the clinical significance of this pattern may require
-further investigation with a larger dataset.
+Female patients made up a notably larger proportion of reports in the 18 to
+44 age group with 410 reports compared to 169 for male patients, which
+could be consistent with research suggesting women in this age group tend
+to report adverse drug reactions more frequently. Male patients recorded
+higher rates of serious events than female patients in the Under 18 and
+45 to 64 age groups, though the clinical significance of this pattern may
+require further investigation with a larger and more complete dataset.
 
-### Geography
+### Reporting Countries
 The United States accounted for 54.79% of all reports, consistent with
-FAERS being a US FDA database. The United Kingdom ranked third globally with
-376 reports representing 6.29% of the dataset. Canada ranked second with
-539 reports at 9.01%.
+FAERS being a US FDA database. The United Kingdom ranked third globally
+with 376 reports at 6.29% and Canada ranked second with 539 reports at
+9.01%. The strong US dominance in reporting means findings may be more
+representative of the US patient population than UK or global populations
+and should be interpreted accordingly.
 
-### Data Quality
-39.73% of records had no patient age recorded and 7.87% had no sex recorded.
-The January 2022 batch submission of 5,017 records represents 83.6% of all
-2022 records, which may have created significant imbalance in the yearly
-distribution and could have limited the reliability of temporal trend analysis.
+### Data Completeness
+39.73% of records had no patient age recorded and 7.87% had no patient
+sex recorded. A large batch of 5,017 records was submitted in January 2022,
+representing 83.6% of all 2022 records. This concentration of records in a
+single month may have affected the reliability of year on year trend
+comparisons and should be considered when interpreting findings related to
+reporting patterns over time.
 
 ## Python Analysis
 | Step | Description |
@@ -326,6 +360,4 @@ fda-adverse-events-analysis/
 **Kingsley Eboh**
 [GitHub](https://github.com/Kingsley-Eboh)
 
-*Data sourced from the FDA Adverse Event Reporting System via the openFDA API.
-This project is intended for portfolio and educational purposes. All analysis
-was conducted in an isolated Ubuntu VM environment.*
+*Data sourced from the FDA Adverse Event Reporting System via the openFDA API. This project is intended for portfolio and educational purposes.*
