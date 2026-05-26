@@ -158,6 +158,7 @@ second at 9.01%. The United Kingdom ranked third at 6.29%.
 39.73% of records had no patient age recorded. 7.87% had no patient sex
 recorded. 5,017 of 6,000 records were submitted in January 2022,
 representing 83.6% of all 2022 records.
+
 ---
 
 ## Analyses
@@ -185,6 +186,8 @@ representing 83.6% of all 2022 records.
 | 20 | Month on Month Change | SQL | Monthly reporting volumes tracked using LAG window function |
 | 21 | Comprehensive Drug Safety Summary | SQL | All serious event metrics combined in a single SQL query |
 | 22 | Yearly Death Rate Trend | SQL | Annual death rates tracked with year on year change using LAG |
+
+---
 
 ## How to Run
 
@@ -229,6 +232,8 @@ psql -U your_user -d portfolio -h localhost -f sql/fda_adverse_events_queries.sq
 ### 7. Open the Power BI Dashboard
 Open powerbi/fda_dashboard.pbix in Power BI Desktop and reconnect to your
 local PostgreSQL instance using your configured credentials when prompted.
+
+---
 
 ## Evidence
 
@@ -277,7 +282,7 @@ local PostgreSQL instance using your configured credentials when prompted.
 ### Analysis 15 — Summary Scorecard
 [![analysis15](figures/analysis15_summary_scorecard.png)](figures/analysis15_summary_scorecard.png)
 
-----
+---
 
 ## Project Structure
 
@@ -308,8 +313,10 @@ fda-adverse-events-analysis/
 └── README.md
 ```
 ---
+
 ## Author
 **Kingsley Eboh**
 [GitHub](https://github.com/Kingsley-Eboh)
 
+---
 *Data sourced from the FDA Adverse Event Reporting System via the openFDA API. This project is intended for portfolio and educational purposes.*
