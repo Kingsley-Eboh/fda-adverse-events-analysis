@@ -286,8 +286,14 @@ local PostgreSQL instance using your configured credentials when prompted.
 ### Analysis 15 — Summary Scorecard
 [![analysis15](figures/analysis15_summary_scorecard.png)](figures/analysis15_summary_scorecard.png)
 
-### Power BI Dashboard — Executive Summary
-[![dashboard_p1](powerbi/fda_adverse_events_dashboard.pdf)](powerbi/fda_adverse_events_dashboard.pdf)
+### Power BI Dashboard — Page 1 Executive Summary
+[![dashboard_p1](powerbi/dashboard_page1_executive_summary.png)](powerbi/dashboard_page1_executive_summary.png)
+
+### Power BI Dashboard — Page 2 Drug Safety Analysis
+[![dashboard_p2](powerbi/dashboard_page2_drug_safety.png)](powerbi/dashboard_page2_drug_safety.png)
+
+### Power BI Dashboard — Page 3 Demographics and Signal Detection
+[![dashboard_p3](powerbi/dashboard_page3_demographics.png)](powerbi/dashboard_page3_demographics.png)
 
 ---
 
