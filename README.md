@@ -323,7 +323,10 @@ fda-adverse-events-analysis/
 ├── powerbi/
 │   ├── fda_adverse_events.csv           # Exported dataset for Power BI
 │   ├── fda_adverse_events_dashboard.pbix  # Power BI dashboard file
-│   └── fda_adverse_events_dashboard.pdf   # Exported dashboard PDF
+│   ├── fda_adverse_events_dashboard.pdf   # Exported dashboard PDF
+│   ├── dashboard_page1_executive_summary.png
+│   ├── dashboard_page2_drug_safety.png
+│   └── dashboard_page3_demographics.png
 ├── .gitignore
 └── README.md
 ```
