@@ -6,6 +6,10 @@
 ![Domain](https://img.shields.io/badge/Domain-Pharmacovigilance-lightgrey)
 ![Method](https://img.shields.io/badge/Method-Signal_Detection_ROR-green)
 ![Data](https://img.shields.io/badge/Data-FDA_FAERS_2022_2025-blue)
+![Records](https://img.shields.io/badge/Records-6%2C000-blue)
+![Analyses](https://img.shields.io/badge/Analyses-15-blue)
+![SQL](https://img.shields.io/badge/SQL_Queries-15-orange)
+![Dashboard](https://img.shields.io/badge/Dashboard-3_Pages-yellow)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 # FDA Drug Adverse Event Signal Detection & Pharmacovigilance Analysis
@@ -282,6 +286,9 @@ local PostgreSQL instance using your configured credentials when prompted.
 ### Analysis 15 — Summary Scorecard
 [![analysis15](figures/analysis15_summary_scorecard.png)](figures/analysis15_summary_scorecard.png)
 
+### Power BI Dashboard — Executive Summary
+[![dashboard_p1](powerbi/fda_adverse_events_dashboard.pdf)](powerbi/fda_adverse_events_dashboard.pdf)
+
 ---
 
 ## Project Structure
@@ -308,7 +315,9 @@ fda-adverse-events-analysis/
 ├── sql/
 │   └── fda_adverse_events_queries.sql   # All 15 SQL queries
 ├── powerbi/
-│   └── fda_dashboard.pbix               # Power BI dashboard
+│   ├── fda_adverse_events.csv           # Exported dataset for Power BI
+│   ├── fda_adverse_events_dashboard.pbix  # Power BI dashboard file
+│   └── fda_adverse_events_dashboard.pdf   # Exported dashboard PDF
 ├── .gitignore
 └── README.md
 ```
