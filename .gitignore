@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .env
 *.csv
+!powerbi/fda_adverse_events.csv
